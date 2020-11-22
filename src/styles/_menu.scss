@@ -1,0 +1,37 @@
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 50%;
+  margin: 0 auto;
+  min-height: 10vh;
+
+  button {
+    font-size: 20px;
+    background-color: transparent;
+    padding: 10px 15px;
+    border: 2px solid #3b3a3a;
+    transition: 0.4s;
+    z-index: 5;
+    cursor: pointer;
+
+    &:hover {
+      color: #fff;
+      background-color: #3b3a3a;
+    }
+
+    &:active {
+      background-color: darken(#3b3a3a, 10%);
+    }
+
+    svg {
+      margin-left: 10px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    max-width: 95%;
+  }
+}

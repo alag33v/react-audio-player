@@ -1,0 +1,88 @@
+.player {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 20vh;
+}
+
+.time-control {
+  display: flex;
+  justify-content: space-between;
+  width: 640px;
+  max-width: 100%;
+
+  p {
+    margin: 0 15px;
+  }
+}
+
+.track {
+  flex-grow: 1;
+  background-color: lightblue;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+
+  input {
+    width: 100%;
+    background-color: transparent;
+    cursor: pointer;
+    -webkit-appearance: none;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::-webkit-slider-thumb {
+      height: 16px;
+      width: 16px;
+      -webkit-appearance: none;
+    }
+
+    &::-moz-range-thumb {
+      background-color: transparent;
+      border: none;
+      -webkit-appearance: none;
+    }
+  }
+
+  .animate-track {
+    width: 100%;
+    height: 100%;
+    background-color: #cecece;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    transform: translateX(0%);
+    position: absolute;
+  }
+}
+
+.play-control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 400px;
+  width: 100%;
+
+  svg {
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 768px) {
+  .time-control {
+    width: 580px;
+    padding: 0 5px;
+  }
+  .play-control {
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 500px) {
+  .play-control {
+    max-width: 60%;
+  }
+}

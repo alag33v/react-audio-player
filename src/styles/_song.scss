@@ -1,0 +1,42 @@
+.song {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+
+  img {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+  }
+
+  h3 {
+    font-size: 32px;
+    margin: 15px 0;
+  }
+
+  h4 {
+    font-size: 24px;
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .song {
+    img {
+      width: 200px;
+      height: 200px;
+    }
+
+    h3 {
+      font-size: 30px;
+      margin: 10px 0 5px;
+    }
+
+    h4 {
+      font-size: 20px;
+      margin: 10px 0;
+    }
+  }
+}
