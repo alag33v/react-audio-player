@@ -36,7 +36,7 @@ const App = () => {
   return (
     <div className={`app ${libraryStatus  ? 'app-active' : ''}`}>
       <Menu libraryStatus={libraryStatus} setLibraryStatus={setLibraryStatus}/>
-      <Song currentSong={currentSong}/>
+      <Song currentSong={currentSong} isPlaying={isPlaying}/>
       <Player audioRef={audioRef} songs={songs} setSongs={setSongs} currentSong={currentSong}
               setCurrentSong={setCurrentSong} songInfo={songInfo} setSongInfo={setSongInfo} isPlaying={isPlaying}
               setIsPlaying={setIsPlaying}/>
